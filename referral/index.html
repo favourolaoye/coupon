@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Trinity billionaire coperative - coupon</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/883dde1e22.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="coupon-card">
+               <h4>Trinity billionaire cooperative</h4>
+                <h3>Thanks for applying for the trade fair program<br>Your personal referral code:</h3>
+                <di class="coupon-row">
+                    <span id="div"></span>
+                    <span id="cpnBtn">Copy Code</span>
+                </di>
+                <p>Do not refresh the page, so as to not alter the code generated</p>
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+            </div>
+        </div>
+        <script>
+            var cpnBtn = document.getElementById("cpnBtn");
+            var cpnCode = document.getElementById("div");
+
+            cpnBtn.onclick = function(){
+                navigator.clipboard.writeText(cpnCode.innerHTML);
+                cpnBtn.innerHTML ="COPIED";
+                setTimeout(function(){
+                    cpnBtn.innerHTML=" COPY CODE";
+                }, 3000);
+            }
+
+        </script>
+        <script src="logic.js"></script>
+    </body>
+</html>
